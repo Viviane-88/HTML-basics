@@ -1,0 +1,110 @@
+body {
+  font-family: Verdana, Arial, Helvetica, sans-serif;
+  line-height: 1.6em;
+  background-color: #fffafa;
+}
+
+header {
+  margin: 0 auto;
+  width: auto;
+  text-align: center;
+}
+
+h1 {
+  color: maroon;
+}
+
+h2 {
+  color: maroon;
+  font-size: medium;
+}
+
+h3 {
+  color: maroon;
+}
+
+p {
+  font-size: small;
+}
+
+img {
+  border-radius: 30px;
+}
+
+li {
+  font-size: small;
+}
+
+button {
+  color: white;
+  font-size: medium;
+  background-color: maroon;
+  border-style: groove;
+  border-radius: 100px;
+  border-color: maroon;
+}
+
+a {
+  color: maroon;
+  text-decoration: none;
+}
+
+figcaption {
+  font-size: small;
+  text-align: auto;
+  font-style: italic;
+}
+
+.extra-border {
+  border: 2px solid maroon;
+  border-radius: 8px;
+  margin: 10px;
+  padding: 10px 15px;
+}
+
+.blockquote {
+  margin: 1em 3em;
+  color: #3c3c3c;
+  border-left: 2px solid #3c3c3c;
+  padding-left: 1em;
+}
+
+.container {
+  border: 2px dotted maroon;
+  border-radius: 4px;
+  width: 80%;
+  margin: 15px auto;
+  padding: 5px 15px;
+}
+
+.bottom-figure {
+  margin: 0 auto;
+  width: auto;
+  text-align: center;
+}
+
+ul.navbar {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: maroon;
+}
+
+li.navbar {
+  font-size: small;
+  display: inline;
+  float: left;
+}
+
+a.navbar {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+a.navbar:hover {
+  background-color: chocolate;
+}
