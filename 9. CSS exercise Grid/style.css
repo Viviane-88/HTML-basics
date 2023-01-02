@@ -1,0 +1,110 @@
+html, body {
+    background-color: lightgray;
+    margin: 10px;
+    padding: 0px;
+}
+
+.container > div {
+    display: grid;
+    place-content: center;
+    font-size: 2em;
+}
+
+.container {
+    /* Er klopt nog iets niet in de hoogte van de rows of de ruimte die ze innemen */
+    height: 100%;
+    display: grid;
+    grid-gap: 3px;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: 1fr 3fr 2fr 1fr;
+    grid-template-areas: 
+    "h h h"
+    "m m m"
+    "w w w"
+    "f f f";
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+.header {
+    grid-area: h;
+    background-color:lightpink
+}
+
+.main {
+    grid-area: m;
+    background-color:lightseagreen
+}
+
+.widget-area{
+    grid-area: w;
+    background-color:cornflowerblue
+}
+
+.footer {
+    grid-area: f;
+    background-color:lightgoldenrodyellow
+}
+
+@media screen and (min-width: 600px) {
+.container {
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(4, 1fr);
+    grid-template-areas: 
+    "h m m"
+    "h m m"
+    "h w w"
+    "h f f";
+}
+
+.header {
+    grid-area: h;
+    background-color:lightpink
+}
+
+.main {
+    grid-area: m;
+    background-color:lightseagreen
+}
+
+.widget-area{
+    grid-area: w;
+    background-color:cornflowerblue
+}
+
+.footer {
+    grid-area: f;
+    background-color:lightgoldenrodyellow
+}
+}
+
+@media screen and (min-width: 1200px) {
+.container {
+    grid-template-columns: 1fr 2fr 1fr;
+    grid-template-rows: repeat(4, 1fr);
+    grid-template-areas: 
+    "h m w"
+    "h m w"
+    "h m w"
+    "h f w";
+}
+
+.header {
+    grid-area: h;
+    background-color:lightpink
+}
+
+.main {
+    grid-area: m;
+    background-color:lightseagreen
+}
+
+.widget-area{
+    grid-area: w;
+    background-color:cornflowerblue
+}
+
+.footer {
+    grid-area: f;
+    background-color:lightgoldenrodyellow
+}
+}
